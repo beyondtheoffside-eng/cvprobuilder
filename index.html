@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Free Online CV Builder - CVProBuilder</title>
+    <meta name="description"
+        content="Create professional CVs and resumes in minutes with CVProBuilder. Free online CV builder with real-time preview. Download as PDF instantly. No registration required.">
+    <meta name="keywords"
+        content="cv builder, free cv maker, online resume builder, professional cv, create cv, cv template, job application, ats cv, download pdf cv, cvprobuilder">
+    <meta name="author" content="CVProBuilder">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cvprobuilder.netlify.app/">
+    <meta property="og:title" content="CVProBuilder - Free Online CV Builder">
+    <meta property="og:description"
+        content="Create professional CVs and resumes in minutes. Free online CV builder with real-time preview. Download as PDF instantly.">
+    <meta property="og:image" content="https://cvprobuilder.netlify.app/media/logopienempi.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cvprobuilder.netlify.app/">
+    <meta property="twitter:title" content="CVProBuilder - Free Online CV Builder">
+    <meta property="twitter:description"
+        content="Create professional CVs in minutes. Free online CV builder with real-time preview. Download as PDF.">
+    <meta property="twitter:image" content="https://cvprobuilder.netlify.app/media/logopienempi.png">
+
+    <!-- Additional SEO Tags -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cvprobuilder.netlify.app/">
+    <meta name="theme-color" content="#3498db">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "CVProBuilder",
+      "url": "https://cvprobuilder.netlify.app/",
+      "description": "Free online CV builder to create professional resumes with real-time preview",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Any",
+      "permissions": "browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="media/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="media/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="media/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="media/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="media/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="media/logopienempi.png" alt="CVProBuilder logo" class="header-image"
+                style="width: 150px; height: auto; display: block; margin: 0 auto;">
+            <h1>CVProBuilder</h1>
+            <p class="subtitle">Create a professional CV in minutes - No account required</p>
+        </header>
+    </div>
+
+    <div class="main-content">
+        <section class="input-section">
+            <h2 class="section-title">Your Information</h2>
+
+            <div class="security-notice">
+                <strong>Security Notice:</strong> Your data never leaves your browser. Everything is processed
+                locally.
+            </div>
+
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="John Doe" maxlength="100">
+            </div>
+
+            <div class="form-group">
+                <label for="jobTitle">Professional Title</label>
+                <input type="text" id="jobTitle" placeholder="Web Developer" maxlength="100">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="john.doe@example.com" maxlength="100">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" placeholder="+1 234 567 890" maxlength="20">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="New York, USA" maxlength="100">
+            </div>
+
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="form-group">
+                <textarea id="summary"
+                    placeholder="Brief description of your professional background, skills, and career objectives..."
+                    maxlength="1000"></textarea>
+            </div>
+
+            <!-- Work Experience Section - Dynamic -->
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <button type="button" id="addJob" class="btn-add">+ Add Another Job</button>
+            </div>
+
+            <div id="jobsContainer">
+                <!-- Job entries will be added here dynamically -->
+            </div>
+
+            <!-- Education Section - Dynamic -->
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <button type="button" id="addEducation" class="btn-add">+ Add Another Degree</button>
+            </div>
+
+            <div id="educationContainer">
+                <!-- Education entries will be added here dynamically -->
+            </div>
+
+            <h2 class="section-title">Skills</h2>
+            <div class="form-group">
+                <label for="skills">List your skills (separated by commas)</label>
+                <input type="text" id="skills" placeholder="JavaScript, HTML, CSS, React, Node.js, Project Management"
+                    maxlength="500">
+            </div>
+
+            <div class="instructions">
+                <h3>Tips for a Great CV</h3>
+                <ul class="tips-list">
+                    <li>Keep your professional summary concise and impactful</li>
+                    <li>Use action verbs to describe your experience</li>
+                    <li>Quantify achievements when possible</li>
+                    <li>Tailor your skills to the job you're targeting</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="preview-section">
+            <h2 class="section-title">CV Preview</h2>
+            <div class="cv-preview" id="cvPreview">
+                <!-- CV content will be generated here by JavaScript -->
+            </div>
+
+            <div class="buttons">
+                <button id="updatePreview">Update Preview</button>
+                <button class="btn-download" id="downloadCV">Download CV</button>
+            </div>
+        </section>
+    </div>
+    </div>
+    <div id="gdpr-banner" class="gdpr-banner">
+        <div class="gdpr-content">
+            <p>We use cookies to enhance your experience. By continuing, you agree to our
+                <a href="privacypolicy.html">Privacy Policy</a>.
+            </p>
+            <div class="gdpr-buttons">
+                <button id="accept-cookies" class="btn-accept">Accept</button>
+                <button id="decline-cookies" class="btn-decline">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 20px; background-color: #f5f7fa; color: black;">
+        <p>&copy; 2025 CVProBuilder. All rights reserved.</p>
+        <p><a href="privacypolicy.html" style="color: #4CAF50;">Privacy Policy</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type='text/javascript'
+        src='//pl27744239.revenuecpmgate.com/be/6a/e5/be6ae5d8dc11d4b9a912e9931c7cb8e6.js'></script>
+
+    <div id="simple-notification" class="simple-notification"></div>
+
+</body>
+
+</html>
